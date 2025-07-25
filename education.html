@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Future Aspirations</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f0f4f8 0%, #d9e7fa 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        header {
+            background: #2a5298;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(42,82,152,0.1);
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #2a5298;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #1e3c72;
+            text-decoration: underline;
+        }
+        .aspirations-container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(42,82,152,0.08);
+            padding: 36px 32px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .aspirations-list {
+            margin-top: 30px;
+            padding-left: 0;
+            list-style: none;
+        }
+        .aspirations-list li {
+            background: #e3ecfa;
+            margin-bottom: 18px;
+            padding: 18px 22px;
+            border-radius: 8px;
+            font-size: 1.15rem;
+            box-shadow: 0 2px 8px rgba(42,82,152,0.05);
+            display: flex;
+            align-items: center;
+            transition: background 0.2s;
+        }
+        .aspirations-list li:hover {
+            background: #c9dafc;
+        }
+        .aspirations-list li i {
+            color: #2a5298;
+            margin-right: 14px;
+            font-size: 1.3em;
+        }
+        .quote {
+            font-style: italic;
+            color: #2a5298;
+            margin: 30px 0 0 0;
+            text-align: right;
+            font-size: 1.1rem;
+        }
+        @media (max-width: 600px) {
+            .aspirations-container {
+                padding: 18px 8px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <script>
+        // Simple animation for aspirations list
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.aspirations-list li');
+            items.forEach((item, idx) => {
+                item.style.opacity = 0;
+                setTimeout(() => {
+                    item.style.transition = 'opacity 0.7s';
+                    item.style.opacity = 1;
+                }, 300 + idx * 250);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Future Aspirations</h1>
+        <p>Dream big, work hard, and make a difference.</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="childhood.html">Childhood</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills & Talents</a>
+        <a href="aspirations.html" class="active">Future Aspirations</a>
+        <a href="contact.html">Contact</a>
+  
+    <div class="aspirations-container">
+        <ul class="aspirations-list">
+            <li><i>🎓</i> Complete my university degree with distinction and lifelong learning.</li>
+            <li><i>💼</i> Build a successful career in technology, contributing to innovative projects.</li>
+            <li><i>🌍</i> Travel the world and experience diverse cultures to broaden my perspective.</li>
+            <li><i>🤝</i> Give back to my community through volunteering and mentorship.</li>
+            <li><i>📚</i> Pursue advanced studies and research in my field of interest.</li>
+            <li><i>🚀</i> Launch my own tech startup to solve real-world problems.</li>
+        </ul>
+        <div class="quote">
+            "The future belongs to those who believe in the beauty of their dreams." – Eleanor Roosevelt
+        </div>
+    </div>
+</body>
+</html>

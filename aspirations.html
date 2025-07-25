@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Aspirations - My Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #f0f4f8 0%, #d9e7fa 100%);
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        header {
+            background: #3a7bd5;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(58,123,213,0.1);
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #3a7bd5;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #205081;
+        }
+        main {
+            max-width: 700px;
+            background: #fff;
+            margin: 40px auto 30px auto;
+            padding: 36px 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(58,123,213,0.08);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #3a7bd5;
+            margin-top: 30px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .aspiration-list li {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        .quote {
+            font-style: italic;
+            color: #205081;
+            margin: 24px 0;
+            padding-left: 18px;
+            border-left: 4px solid #3a7bd5;
+        }
+        @media (max-width: 800px) {
+            main {
+                padding: 20px 8px;
+            }
+        }
+    </style>
+    <script>
+        // Simple fade-in animation for main content
+        document.addEventListener('DOMContentLoaded', function() {
+            const main = document.querySelector('main');
+            main.style.opacity = 0;
+            setTimeout(() => {
+                main.style.transition = 'opacity 1.2s';
+                main.style.opacity = 1;
+            }, 200);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Future Aspirations</h1>
+        <p>Dream big, work hard, and make a difference.</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="childhood.html">Childhood</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills & Talents</a>
+        <a href="aspirations.html" class="active">Future Aspirations</a>
+        <a href="contact.html">Contact</a>
+   
+    <main>
+        <section>
+            <h2>Career Goals</h2>
+            <ul class="aspiration-list">
+                <li>Graduate with honors in Computer Science and contribute to innovative tech projects.</li>
+                <li>Secure a position as a software developer at a leading technology company.</li>
+                <li>Continuously learn new programming languages and frameworks to stay ahead in the field.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Personal Growth</h2>
+            <ul class="aspiration-list">
+                <li>Develop strong leadership and teamwork skills through campus organizations and internships.</li>
+                <li>Travel to new countries to broaden my perspective and embrace diverse cultures.</li>
+                <li>Volunteer for causes that promote education and technology access for underprivileged communities.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Long-Term Vision</h2>
+            <ul class="aspiration-list">
+                <li>Start my own tech company focused on solving real-world problems.</li>
+                <li>Mentor aspiring students and give back to the academic community.</li>
+                <li>Achieve a healthy work-life balance and pursue lifelong learning.</li>
+            </ul>
+        </section>
+        <div class="quote">
+            "The future belongs to those who believe in the beauty of their dreams." – Eleanor Roosevelt
+        </div>
+        <p style="text-align:center; margin-top:40px;">
+            <a href="https://github.com/yourusername/your-portfolio-repo" target="_blank" style="color:#3a7bd5; text-decoration:underline;">
+                View my project on GitHub
+            </a>
+        </p>
+    </main>
+</body>
+</html>

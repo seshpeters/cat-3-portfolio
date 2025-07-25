@@ -1,0 +1,178 @@
+/* style.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f9fb;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Container for content */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+}
+
+/* Header styles */
+header {
+
+
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+header img.profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4f8cff;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(79,140,255,0.15);
+}
+
+header h1 {
+    
+    font-size: 2.5rem;
+    color: #4f8cff;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4f8cff;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #4f8cff;
+    color: #fff;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 32px;
+}
+
+section h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 12px;
+    border-left: 4px solid #4f8cff;
+    padding-left: 12px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Responsive image before About Me */
+.intro-image {
+    display: block;
+    margin: 0 auto 24px auto;
+    max-width: 220px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(79,140,255,0.10);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 18px 0 0 0;
+    color: #888;
+    font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 16px 6px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    section h2 {
+        font-size: 1.2rem;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Accessibility: Focus styles for navigation */
+nav a:focus {
+    outline: 2px solid #4f8cff;
+    outline-offset: 2px;
+}
+.content {
+    display: flex;          /* Align items in a row */
+    align-items: center;    /* Vertically align image and text */
+    gap: 20px;              /* Space between image and text */
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.profile-img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.text {
+    flex: 1;                /* Let text take remaining space */
+}
+header {
+    position: fixed;        /* Sticks the header to the top */
+    top: 0;                 /* Position at top */
+    left: 0;
+    width: 100%;            /* Full width */
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;          /* Keeps it on top of other elements */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 120px;      /* Add space so content isn't hidden by the navbar */
+    padding: 20px;
+}

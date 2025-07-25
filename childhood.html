@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Childhood - Personal Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #fceabb 0%, #f8b500 100%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #fffbe7;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #f8b500;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #e67e22;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fffbe7;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 32px;
+        }
+        h1 {
+            color: #f8b500;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #e67e22;
+            margin-top: 30px;
+        }
+        .childhood-photo {
+            width: 180px;
+            border-radius: 50%;
+            display: block;
+            margin: 24px auto 16px auto;
+            box-shadow: 0 2px 12px rgba(248,181,0,0.15);
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .memory {
+            background: #fff3cd;
+            border-left: 5px solid #f8b500;
+            padding: 16px;
+            margin: 18px 0;
+            border-radius: 8px;
+            animation: fadeIn 1.2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px;
+            }
+            .childhood-photo {
+                width: 120px;
+            }
+        }
+    </style>
+    <script>
+        // Simple animation for memories
+        document.addEventListener('DOMContentLoaded', function() {
+            const memories = document.querySelectorAll('.memory');
+            memories.forEach((mem, idx) => {
+                mem.style.animationDelay = (idx * 0.3) + 's';
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Childhood</h1>
+        <p>Formative Years &amp; Memorable Moments</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="childhood.html" class="active">Childhood</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills & Talents</a>
+        <a href="aspirations.html">Future Aspirations</a>
+        <a href="contact.html">Contact</a>
+    
+    <div class="container">
+        <img src="images/childhood-photo.jpg" alt="A childhood photo of me smiling" class="childhood-photo">
+        <h2>Family & Early Life</h2>
+        <div class="memory">
+            <p>
+                Growing up in a close-knit family, I spent countless hours playing with my siblings and learning from my parents. Our weekend picnics and bedtime stories are memories I cherish deeply.
+            </p>
+        </div>
+        <h2>Formative Moments</h2>
+        <div class="memory">
+            <p>
+                My curiosity was sparked early on by building LEGO castles and exploring the outdoors. These experiences taught me creativity, resilience, and the joy of discovery.
+            </p>
+        </div>
+        <h2>Lessons Learned</h2>
+        <ul>
+            <li>Value of kindness and empathy</li>
+            <li>Importance of teamwork and sharing</li>
+            <li>Never stop asking questions</li>
+        </ul>
+        <div class="memory">
+            <p>
+                One of my proudest childhood moments was winning my first school arts competition, which inspired my lifelong love for creativity and self-expression.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

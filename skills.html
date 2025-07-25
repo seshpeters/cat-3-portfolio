@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills & Talents</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f8fb;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2d3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #1abc9c;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #34495e;
+        }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+            padding: 32px;
+        }
+        h1 {
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-top: 24px;
+        }
+        .skill-card {
+            background: #eaf6f6;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 220px;
+            min-width: 200px;
+            box-shadow: 0 1px 4px rgba(44,62,80,0.06);
+            transition: transform 0.2s;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px) scale(1.03);
+        }
+        .skill-title {
+            font-size: 1.2em;
+            color: #2d3e50;
+            margin-bottom: 8px;
+        }
+        .progress-bar-bg {
+            background: #d0ece7;
+            border-radius: 6px;
+            height: 12px;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        .progress-bar {
+            background: #1abc9c;
+            height: 12px;
+            border-radius: 6px;
+            width: 0;
+            transition: width 1s;
+        }
+        @media (max-width: 600px) {
+            main { padding: 12px; }
+            .skills-list { flex-direction: column; gap: 12px; }
+        }
+    </style>
+</head>
+<body>
+       <header>
+        
+    </header>
+   
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="childhood.html">Childhood</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="aspirations.html">Aspirations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  
+   
+    <main>
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <div class="skill-title">HTML &amp; CSS</div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                    <p>Building responsive and accessible web pages.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-title">JavaScript</div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                    <p>Adding interactivity and dynamic features to websites.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-title">Python</div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" data-progress="75"></div>
+                    </div>
+                    <p>Solving problems and automating tasks.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Other Talents & Hobbies</h2>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <div class="skill-title">Photography</div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" data-progress="70"></div>
+                    </div>
+                    <p>Capturing moments and telling stories through images.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-title">Public Speaking</div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" data-progress="65"></div>
+                    </div>
+                    <p>Engaging audiences and sharing ideas confidently.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-title">Music (Guitar)</div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" data-progress="60"></div>
+                    </div>
+                    <p>Expressing creativity and relaxing through music.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer style="text-align:center; padding:18px 0; background:#2d3e50; color:#fff;">
+        &copy; 2024 Your Name | <a href="https://github.com/yourusername/your-portfolio-repo" style="color:#1abc9c;" target="_blank">GitHub Portfolio</a>
+    </footer>
+    <script>
+        // Animate progress bars
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.progress-bar').forEach(function(bar) {
+                let progress = bar.getAttribute('data-progress');
+                setTimeout(() => {
+                    bar.style.width = progress + '%';
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
