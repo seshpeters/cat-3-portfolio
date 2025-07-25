@@ -4,7 +4,7 @@ This repository contains the source code for my personal portfolio website, whic
 
 ## Live Website
 
-You can view the live version of the portfolio here: [https://your-site-name.netlify.app](https://your-site-name.netlify.app)
+You can view the live version of the portfolio here: [https://your-site-name.netlify.app](https://sarahpeters.netlify.app)
 
 ## Overview
 
@@ -26,8 +26,4 @@ The project utilizes the following technologies and tools:
 - [Include any libraries or frameworks you used, e.g., React, Tailwind CSS, Bootstrap]
 - Netlify for deployment and continuous integration
 
-## Installation and Setup
 
-To run the project locally, follow these steps:
-
-1. Clone the repository:
