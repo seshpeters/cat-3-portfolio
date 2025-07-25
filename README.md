@@ -4,7 +4,7 @@ This repository contains the source code for my personal portfolio website, whic
 
 ## Live Website
 
-You can view the live version of the portfolio here: [https://your-site-name.netlify.app](https://sarahpeters.netlify.app)
+You can view the live version of the portfolio here: [https://sarahpeters.netlify.app](https://sarahpeters.netlify.app)
 
 ## Overview
 
